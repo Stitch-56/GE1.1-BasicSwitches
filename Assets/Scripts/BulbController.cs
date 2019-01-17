@@ -7,15 +7,6 @@ public class BulbController : MonoBehaviour
 
     //Bulb Controller Start
 
-    public SwitchController theSwitch;
-
-    private Animator LightBulb;
-
-    private bool lightOn;
-
-    private bool lightOff;
-
-
     // Use this for initialization
     void Start () {
 		
@@ -25,19 +16,4 @@ public class BulbController : MonoBehaviour
 	void Update () {
 		
 	}
-
-    private void Awake()
-    {
-        public void turnOn()
-        {
-            switchOff = false;
-            LightBulb.SetBool("LightOff", lightOff);
-        }
-
-        public void turnOff()
-        {
-            switchOff = true;
-            LightBulb.SetBool("LightOff", lightOff);
-        }
-    }
 }
