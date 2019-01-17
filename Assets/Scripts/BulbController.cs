@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulbController : MonoBehaviour {
+public class BulbController : MonoBehaviour
+{
 
     //Bulb Controller Start
 
     public SwitchController theSwitch;
 
-    public bool LightOn;
+    private Animator LightBulb;
 
-    public bool LightOff;
+    private bool lightOn;
+
+    private bool lightOff;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -22,4 +25,19 @@ public class BulbController : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void Awake()
+    {
+        public void turnOn()
+        {
+            switchOff = false;
+            LightBulb.SetBool("LightOff", lightOff);
+        }
+
+        public void turnOff()
+        {
+            switchOff = true;
+            LightBulb.SetBool("LightOff", lightOff);
+        }
+    }
 }
