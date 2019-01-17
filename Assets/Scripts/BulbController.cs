@@ -6,6 +6,13 @@ public class BulbController : MonoBehaviour {
 
     //Bulb Controller Start
 
+    public SwitchController theSwitch;
+
+    public bool LightOn;
+
+    public bool LightOff;
+
+
 	// Use this for initialization
 	void Start () {
 		
