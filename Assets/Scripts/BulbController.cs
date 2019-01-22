@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BulbController : MonoBehaviour
 {
+    private Animator LightBulb;
 
-    //Bulb Controller Start
-
+    public bool LightOff;
     // Use this for initialization
     void Start () {
 		
@@ -16,4 +16,15 @@ public class BulbController : MonoBehaviour
 	void Update () {
 		
 	}
+    public void turnOn()
+    {
+        LightBulb.SetBool("On", true);
+        LightOff = true;
+    }
+
+    public void turnOff()
+    {
+        LightBulb.SetBool("Off", false);
+        LightOff = false;
+    }
 }
