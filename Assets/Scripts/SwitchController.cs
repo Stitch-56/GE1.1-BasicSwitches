@@ -5,6 +5,7 @@ public class SwitchController : MonoBehaviour {
 
 	// switchOff reflects whether the switch is on ot off
 	private bool switchOff = true;
+    public bool switchToggle;
 
 	// determines whether the switch is enabled or not. If enabled the
 	// player can toggle the switch by pressing the spacebar
@@ -48,6 +49,7 @@ public class SwitchController : MonoBehaviour {
 		if (switchEnabled == true) {
 			switchOff = !switchOff;
 			switchAnimator.SetBool ("SwitchOff", switchOff);
+            switchToggle = true;
 		} else {
 			Debug.Log ("Can't toggle switch as it's not enabled");
 		}

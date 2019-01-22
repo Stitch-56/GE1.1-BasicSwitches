@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space) == true) {
 			if (theSwitch != null) {
-				if (theSwitch.toggleSwitch() = true);
+                if (theSwitch.switchToggle == true) ;
                 {
                     if (theBulb.LightOff == true)
                     {
